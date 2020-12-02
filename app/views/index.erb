@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<header>
+  <title>Index Page</title>
+</header>
+
+<body>
+  <h1>Here are your Articles:</h1>
+  <div>
+    <% @articles.each_with_index do |article, index|%>
+      <%= "#{index+1}. #{article.title}"%><br>
+    <% end%>
+  </div>
+
+</body>
+
+</html>
